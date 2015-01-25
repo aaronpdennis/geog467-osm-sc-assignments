@@ -16,9 +16,44 @@
 <div id='map'></div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiYWFyb25kZW5uaXMiLCJhIjoiem5LLURoYyJ9.T3tswGTI5ve8_wE-a02cMw';
+var mapStyle = {
+  "version": 6,
+  "sources": {
+    "mapbox-sat": {
+      "type": "raster",
+      "url": "mapbox://mapbox.satellite",
+      "tileSize": 256
+    },
+    "mapbox-streets": {
+      "type": "vector",
+      "url": "mapbox://mapbox.mapbox-streets-v5"
+    }
+  },
+  "layers": [{
+    "id": "background",
+    "type": "background",
+    "paint": {
+      "background-color": "rgb(4,7,14)"
+    }
+  }, {
+    "id": "satellite",
+    "type": "raster",
+    "source": "mapbox-sat",
+    "source-layer": "mapbox_satellite_full"
+  }, {
+    "id": "buildings",
+    "source": "mapbox-streets",
+    "source-layer": "building",
+    "type": "fill",
+    "paint": {
+      "fill-color": "white"
+    }
+  }]
+}
+
 var map = new mapboxgl.Map({
   container: 'map',
-  style: 'https://www.mapbox.com/mapbox-gl-styles/styles/satellite-v6.json',
+  style: mapStyle,
   center: [-25.384298, 134.383219],
   zoom: 3.5
 });
