@@ -4,8 +4,8 @@
     <meta charset='utf-8' />
     <title></title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.5.2/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.5.2/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
     <style>
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -15,51 +15,13 @@
 
 <div id='map'></div>
 <script>
-mapboxgl.accessToken = 'pk.eyJ1IjoiYWFyb25kZW5uaXMiLCJhIjoiem5LLURoYyJ9.T3tswGTI5ve8_wE-a02cMw';
-var mapStyle = {
-  "version": 6,
-  "sources": {
-    "mapbox-sat": {
-      "type": "raster",
-      "url": "mapbox://mapbox.satellite",
-      "tileSize": 256
-    },
-    "mapbox-streets": {
-      "type": "vector",
-      "url": "mapbox://mapbox.mapbox-streets-v5"
-    }
-  },
-  "layers": [{
-    "id": "background",
-    "type": "background",
-    "paint": {
-      "background-color": "rgb(4,7,14)"
-    }
-  }, {
-    "id": "satellite",
-    "type": "raster",
-    "source": "mapbox-sat",
-    "source-layer": "mapbox_satellite_full"
-  }, {
-    "id": "buildings",
-    "source": "mapbox-streets",
-    "source-layer": "building",
-    "type": "fill",
-    "paint": {
-      "fill-color": "#F51E10",
-      "fill-opacity": "0.2",
-      "line-width": "2.5",
-      "fill-outline-color": "#FFF",
-    }
-  }]
-}
+L.mapbox.accessToken = 'pk.eyJ1IjoiYWFyb25kZW5uaXMiLCJhIjoiem5LLURoYyJ9.T3tswGTI5ve8_wE-a02cMw';
+var map = L.mapbox.map('map', 'examples.map-i86nkdio').setView([40.7920, -77.8659], 14);
 
-var map = new mapboxgl.Map({
-  container: 'map',
-  style: mapStyle,
-  center: [40.7920, -77.8659],
-  zoom: 14
-});
+var featureLayer = L.mapbox.featureLayer()
+    .loadURL('/assignments.geojson')
+    .addTo(map);
+
 </script>
 
 </body>
