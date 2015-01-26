@@ -4,7 +4,7 @@ var data = {
     {
       "type": "Feature",
       "properties": {
-        "contributor": "Aaron Dennis"
+        "title": "Aaron Dennis"
       },
       "geometry": {
         "type": "Polygon",
@@ -65,7 +65,7 @@ var data = {
     {
       "type": "Feature",
       "properties": {
-        "contributor": "Cindy Brewer"
+        "title": "Cindy Brewer"
       },
       "geometry": {
         "type": "Polygon",
