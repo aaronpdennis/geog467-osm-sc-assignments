@@ -25,8 +25,8 @@ var Assignments = L.geoJson(data, {
     onEachFeature: function (feature, layer) {
         layer.bindPopup(feature.properties.title);
         layer.on({
-            mouseover: feature.openPopup();
-            mouseout: feature.closePopup();
+            mouseover: feature.openPopup(),
+            mouseout: feature.closePopup()
         });
         }
     })
