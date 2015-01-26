@@ -30,10 +30,16 @@ Assignments.setStyle({
         weight: 1
     });
     
-label = new L.Label()
-label.setContent("static label")
-label.setLatLng(polygon.getBounds().getCenter())
-map.showLabel(label);
+function onEachFeature(feature, layer) {
+    // does this feature have a property named popupContent?
+    if (feature.properties && feature.properties.contributor) {
+        layer.bindPopup(feature.properties.contributor);
+    }
+}
+
+L.geoJson(Assignments, {
+    onEachFeature: onEachFeature
+}).addTo(map);
 
 </script>
 
