@@ -30,14 +30,12 @@ Assignments.setStyle({
         weight: 1
     });
     
-var myLayer = L.mapbox.featureLayer().setFilter(function() { return false; }).addTo(map);
-
-myLayer.setGeoJSON(data);
-myLayer.on('mouseover', function(e) {
-    e.layer.openPopup();
+Assignments.bindPopup("Popup content");
+Assignments.on('mouseover', function (e) {
+    this.openPopup();
 });
-myLayer.on('mouseout', function(e) {
-    e.layer.closePopup();
+Assignments.on('mouseout', function (e) {
+    this.closePopup();
 });
 
 </script>
