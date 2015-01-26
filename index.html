@@ -36,11 +36,11 @@ Assignments.setStyle({
         weight: 1
     });
     
-Assignments.on('mouseover', function() {
-    this.openPopup();
+Assignments.on('mouseover', function(e) {
+    e.target.openPopup();
 });
-Assignments.on('mouseout', function() {
-    this.closePopup();
+Assignments.on('mouseout', function(e) {
+    e.target.closePopup();
 });
 
 </script>
