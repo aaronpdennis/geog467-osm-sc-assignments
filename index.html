@@ -24,13 +24,13 @@ var Assignments = L.geoJson(data, {
     style: L.mapbox.simplestyle.style, 
     onEachFeature: function (feature, layer) {
         layer.bindPopup(feature.properties.title);
-        layer.on({
-            mouseover: feature.openPopup(),
-            mouseout: feature.closePopup()
-        });
         }
     })
     .addTo(map);
+
+Assigments.on('mouseover', function(e) {
+    e.target.openPopup();
+})
 
 Assignments.setStyle({
         fillColor: 'pink',
