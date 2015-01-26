@@ -20,10 +20,13 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiYWFyb25kZW5uaXMiLCJhIjoiem5LLURoYyJ9.T3tswGTI
 var map = L.mapbox.map('map', 'mapbox.light').setView([40.7920, -77.8659], 14);
 
 
-var Assignments = L.geoJson(data, { style: L.mapbox.simplestyle.style },
-     onEachFeature: function (feature, layer) {
-         layer.bindPopup(feature.properties.title);
-     }).addTo(map);
+var Assignments = L.geoJson(data, { 
+    style: L.mapbox.simplestyle.style, 
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup(feature.properties.title);
+        }
+    })
+    .addTo(map);
 
 Assignments.setStyle({
         fillColor: 'pink',
