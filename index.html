@@ -21,7 +21,7 @@ var map = L.mapbox.map('map', 'mapbox.light').setView([40.7920, -77.8659], 14);
 var Assignments = L.geoJson(data, { 
     style: L.mapbox.simplestyle.style, 
     onEachFeature: function (feature, layer) {
-        layer.bindPopup(feature.properties.title);
+        layer.bindPopup(feature.properties.contributor);
         }
     })
     .addTo(map);
