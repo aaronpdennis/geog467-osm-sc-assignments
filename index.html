@@ -18,8 +18,6 @@
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiYWFyb25kZW5uaXMiLCJhIjoiem5LLURoYyJ9.T3tswGTI5ve8_wE-a02cMw';
 var map = L.mapbox.map('map', 'mapbox.light').setView([40.7920, -77.8659], 14);
-
-
 var Assignments = L.geoJson(data, { 
     style: L.mapbox.simplestyle.style, 
     onEachFeature: function (feature, layer) {
@@ -27,11 +25,6 @@ var Assignments = L.geoJson(data, {
         }
     })
     .addTo(map);
-
-Assigments.on('mouseover', function(e) {
-    e.target.openPopup();
-})
-
 Assignments.setStyle({
         fillColor: 'pink',
         fillOpacity: 0.3,
@@ -39,7 +32,13 @@ Assignments.setStyle({
         opacity: 0.8,
         weight: 1
     });
-
+    
+Assignments.on('mouseover', function (e) {
+    this.openPopup();
+});
+Assignments.on('mouseout', function (e) {
+    this.closePopup();
+});
 </script>
 
 </body>
