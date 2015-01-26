@@ -16,10 +16,11 @@
 <div id='map'></div>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiYWFyb25kZW5uaXMiLCJhIjoiem5LLURoYyJ9.T3tswGTI5ve8_wE-a02cMw';
-var map = L.mapbox.map('map', 'examples.map-i86nkdio').setView([40.7920, -77.8659], 14);
+var map = L.mapbox.map('map', 'aarondennis.670c48aa').setView([40.7920, -77.8659], 14);
 
 var featureLayer = L.mapbox.featureLayer()
     .loadURL('assignments.geojson')
+    .bindLabel('hello')
     .addTo(map);
 
 </script>
