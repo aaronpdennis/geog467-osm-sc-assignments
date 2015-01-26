@@ -30,7 +30,7 @@ Assignments.setStyle({
         weight: 1
     });
     
-Assignments.bindPopup(this.properties.Title);
+Assignments.bindPopup(feature.properties.title);
 Assignments.on('mouseover', function (e) {
     this.openPopup();
 });
