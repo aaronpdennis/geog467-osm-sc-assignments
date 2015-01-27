@@ -4,7 +4,7 @@ var data = {
     {
       "type": "Feature",
       "properties": {
-        "contributor": ""
+        "contributor": "Adam Aharonian"
       },
       "geometry": {
         "type": "Polygon",
@@ -85,7 +85,7 @@ var data = {
     {
       "type": "Feature",
       "properties": {
-        "contributor": ""
+        "contributor": "Mike Bujakowski"
       },
       "geometry": {
         "type": "Polygon",
@@ -170,7 +170,7 @@ var data = {
     {
       "type": "Feature",
       "properties": {
-        "contributor": ""
+        "contributor": "Will Chittester"
       },
       "geometry": {
         "type": "Polygon",
@@ -243,7 +243,7 @@ var data = {
     {
       "type": "Feature",
       "properties": {
-        "contributor": ""
+        "contributor": "Will Coughlin"
       },
       "geometry": {
         "type": "Polygon",
@@ -336,7 +336,7 @@ var data = {
     {
       "type": "Feature",
       "properties": {
-        "contributor": ""
+        "contributor": "Braden Crowell"
       },
       "geometry": {
         "type": "Polygon",
@@ -413,7 +413,7 @@ var data = {
     {
       "type": "Feature",
       "properties": {
-        "contributor": ""
+        "contributor": "Jena DiFrisco"
       },
       "geometry": {
         "type": "Polygon",
@@ -478,7 +478,7 @@ var data = {
     {
       "type": "Feature",
       "properties": {
-        "contributor": ""
+        "contributor": "Britt Eckerstrom"
       },
       "geometry": {
         "type": "Polygon",
@@ -542,7 +542,9 @@ var data = {
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "contributor": "Kurtis Graham"
+      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -653,7 +655,9 @@ var data = {
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "contributor": "Brad Guay"
+      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -732,7 +736,9 @@ var data = {
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "contributor": "Leigh Hastings"
+      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -807,7 +813,9 @@ var data = {
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "contributor": "Michelle Lenze"
+      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -890,7 +898,9 @@ var data = {
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "contributor": "Beth Newhart"
+      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -1001,7 +1011,9 @@ var data = {
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "contributor": "Jake Simon"
+      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -1056,7 +1068,9 @@ var data = {
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "contributor": "Grant Smith"
+      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -1187,7 +1201,9 @@ var data = {
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "contributor": "Patrick Stephens"
+      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -1238,7 +1254,9 @@ var data = {
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "contributor": "Chris Sternberger"
+      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -1269,7 +1287,9 @@ var data = {
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "contributor": "Everleigh Stokes"
+      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -1332,7 +1352,9 @@ var data = {
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "contributor": "Yale Williams"
+      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -1439,7 +1461,9 @@ var data = {
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "contributor": "David Zubenko"
+      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -1510,14 +1534,16 @@ var data = {
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "contributor": "Cindy Brewer"
+      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              -77.86823987960814,
-              40.765510227509644
+              -77.86315441131592,
+              40.76838673186755
             ],
             [
               -77.86105155944824,
@@ -1536,32 +1562,8 @@ var data = {
               40.7721081261999
             ],
             [
-              -77.86733865737915,
-              40.7720918760227
-            ],
-            [
-              -77.86877632141113,
-              40.771783121900796
-            ],
-            [
-              -77.86972045898438,
-              40.771685620301064
-            ],
-            [
-              -77.87070751190186,
-              40.771718120850196
-            ],
-            [
-              -77.87173748016357,
-              40.77199437487606
-            ],
-            [
-              -77.87373304367065,
-              40.77084060044341
-            ],
-            [
-              -77.86823987960814,
-              40.765510227509644
+              -77.86315441131592,
+              40.76838673186755
             ]
           ]
         ]
